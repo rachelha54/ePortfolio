@@ -367,36 +367,32 @@ p {
 
 /*Resume Page*/
 .resume-container {
-  display: flex;
-  flex: column;
-  align-items: flex-start;
-  width: 100vw;  
-  height: 100vh;
-  overflow: hidden;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7em;
 }
 
 .individual-resume-container {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   justify-content: center;
-  width: 500px;
 }
 
 .pdf-viewer {
-  width: 70%;
-  height: 500px;
+  width: 100%;
+  height: 175vh;
   border: none;
-  margin-top: 20px;
+  margin-bottom: 5em;
 }
 
 .resume-blurb {
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 7em 2em 0px 2em;
+  padding: 2em;
   width: 800px;
 }
 
