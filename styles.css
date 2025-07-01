@@ -131,8 +131,9 @@ h3 a:hover {
 .portfolio-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: flex-start;
-  min-height: 100vh;
+  flex-wrap: wrap;
 }
 
 .experiences-container {
@@ -169,6 +170,7 @@ h1 b {
   text-align: center;
   justify-content: center;
   align-content: center;
+  width: 100%;
 }
 
 /*Rounded Big Rectangles for Experiences*/
@@ -321,8 +323,9 @@ p {
 .cnc-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: flex-start;
-  min-height: 100vh;
+  flex-wrap: wrap;
 }
 
 .certifications-container {
