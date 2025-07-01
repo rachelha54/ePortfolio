@@ -357,7 +357,6 @@ p {
 .rounded-mini-rect-outer {
   background-color: #F6943B;
   padding: 5px;
-  display: inline-block;
   border-radius: 15px;
   margin: 5px;
 }
