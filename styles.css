@@ -161,8 +161,14 @@ h1 b {
   text-decoration: none;
   font-size: 40px;
   font-weight: 400;
-  padding: 0px 4em 0px;
+  margin: 0 auto;
   text-align: center;
+}
+
+.heading-container {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
 }
 
 /*Rounded Big Rectangles for Experiences*/
