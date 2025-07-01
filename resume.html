@@ -10,15 +10,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Kapakana:wght@369&family=Nunito:ital,wght@0,700;1,700&display=swap" rel="stylesheet">  
 </head>
 <body>
-  <!--Tab Bar-->
-  <div class="tab-bar">
-    <h3><a href="index.html">Home</a></h3>
-    <h3><a href="portfolio.html">Portfolio</a></h3>
-    <h3><a href="coursesCertifications.html">Courses/Certifications</a></h3>
-    <h3><a href="resume.html">Resume</a></h3>
-    <h3><a href="contactMe.html">Contact Me</a></h3>
-    <h3><a href="fun.html">Fun!!</a></h3>
-  </div>
+    <nav id="desktop-nav">
+      <div>
+        <ul class="tab-links">
+          <li><h3><a href="index.html">Home</a></h3></li>
+          <li><h3><a href="portfolio.html">Portfolio</a></h3></li>
+          <li><h3><a href="coursesCertifications.html">Courses/Certifications</a></h3></li>
+          <li><h3><a href="resume.html">Resume</a></h3></li>
+          <li><h3><a href="contactMe.html">Contact Me</a></h3></li>
+          <li><h3><a href="fun.html">Fun!!</a></h3></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="dropdown-nav">
+      <div class="dropdown-menu">
+        <div class="dropdown-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="dropdown-tabs">
+          <h3 style="margin: 2px;"><a href="index.html" onclick="toggleMenu()">Home</a></h3>
+          <h3 style="margin: 2px;"><a href="portfolio.html" onclick="toggleMenu()">Portfolio</a></h3>
+          <h3 style="margin: 2px;"><a href="coursesCertifications.html" onclick="toggleMenu()">Courses/Certifications</a></h3>
+          <h3 style="margin: 2px;"><a href="resume.html" onclick="toggleMenu()">Resume</a></h3>
+          <h3 style="margin: 2px;"><a href="contactMe.html" onclick="toggleMenu()">Contact Me</a></h3>
+          <h3 style="margin: 2px;"><a href="fun.html" onclick="toggleMenu()">Fun!!</a></h3>
+        </div>
+      </div>
+    </nav>
+
+    <script src="script.js"></script>
 
 
   <div class="big-resume-container">
