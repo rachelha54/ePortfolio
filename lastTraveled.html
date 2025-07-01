@@ -5,20 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rachel J. Ha</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mediaQueries.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Kapakana:wght@369&family=Nunito:ital,wght@0,700;1,700&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!--Tab Bar-->
-  <div class="tab-bar">
-    <h3><a href="index.html">ePortfolio</a></h3>
-    <h3><a href="recentlyRead.html">Book Reviews</a></h3>
-    <h3><a href="games.html">Games</a></h3>
-    <h3><a href="lastTraveled.html">Travels</a></h3>
-    <h3><a href="contact.html">Contact Me</a></h3>
-  </div>
+  <nav id="desktop-nav">
+    <div>
+      <ul class="tab-links">
+        <li><h3><a href="index.html">ePortfolio</a></h3></li>
+        <li><h3><a href="recentlyRead.html">Recently Read</a></h3></li>
+        <li><h3><a href="games.html">Games</a></h3></li>
+        <li><h3><a href="lastTraveled.html">Last Traveled</a></h3></li>
+        <li><h3><a href="contact.html">Contact Me</a></h3></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="dropdown-nav">
+    <div class="dropdown-menu">
+      <div class="dropdown-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="dropdown-tabs">
+        <h3 style="padding-top: 100px; margin: 2px;"><a href="index.html" onclick="toggleMenu()">ePortfolio</a></h3>
+        <h3 style="margin: 2px;"><a href="recentlyRead.html" onclick="toggleMenu()">Recently Read</a></h3>
+        <h3 style="margin: 2px;"><a href="games.html" onclick="toggleMenu()">Games</a></h3>
+        <h3 style="margin: 2px;"><a href="lastTraveled.html" onclick="toggleMenu()">Last Traveled</a></h3>
+        <h3 style="margin: 2px;"><a href="contact.html" onclick="toggleMenu()">Contact Me</a></h3>
+      </div>
+    </div>
+  </nav>
+
+  <script src="script.js"></script>
 
 <!--Destination Template
     <div class="rounded-square-outer">
