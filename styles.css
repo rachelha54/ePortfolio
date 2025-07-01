@@ -72,6 +72,7 @@ h3 {
 h3 c {
   color: #F6943B;
   line-height: 1.2;
+  margin: 0 auto;
 }
 
 /*Color for About Me Blurb*/
@@ -403,7 +404,7 @@ p {
   align-items: center;
   justify-content: center;
   padding: 2em;
-  width: 800px;
+  width: 100%;
 }
 
 .big-resume-container {
