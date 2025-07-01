@@ -489,6 +489,10 @@ p {
   height: 24px;
   width: 30px;
   cursor: pointer;
+  position: fixed;
+  top: 5vh;
+  right: 5vw;
+  z-index: 1001;
 }
 
 .dropdown-icon span {
@@ -499,15 +503,18 @@ p {
 }
 
 .dropdown-tabs {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   right: 0;
   background-color: #EEE7D2;
-  width: fit-content;
-  max-height: 0;
+  height: 100vh;
+  width: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
   border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .dropdown-tabs a {
@@ -521,21 +528,23 @@ p {
 }
 
 .dropdown-tabs.open {
-  max-height: 300px;
-  border-radius: 15px;
-  border: 5px solid #F6943B;
+  width: 30vw;
+  border-left: 5px solid #F6943B;
 }
 
 .dropdown-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
+  z-index: 999;
 }
 
 .dropdown-icon.open span:nth-child(2) {
   opacity: 0;
+  z-index: 999;
 }
 
 .dropdown-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
+  z-index: 999;
 }
 
 .dropdown-icon span:first-child {
