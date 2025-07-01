@@ -5,4 +5,10 @@
     #dropdown-nav {
         display: flex;
     }
+}@media (max-width: 600px) {
+  .experiences-container {
+    padding: 0 2em 1em;
+    justify-content: center;
+    align-content: center;
+  }
 }
