@@ -18,3 +18,36 @@ document.addEventListener('click', function (event) {
     icon.classList.remove('open');
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.triangle-toggle').forEach(triangle => {
+    triangle.addEventListener('click', () => {
+      const box = triangle.closest('.rounded-rectangle-inner');
+      box.classList.toggle('expanded');
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.triangle-toggle').forEach(triangle => {
+    triangle.addEventListener('click', () => {
+      const inner = triangle.closest('.rounded-square-inner');
+      const outer = inner.closest('.rounded-square-outer');
+
+      inner.classList.toggle('expanded');
+      outer.classList.toggle('expanded');
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.triangle-toggle').forEach(triangle => {
+    triangle.addEventListener('click', () => {
+      const inner = triangle.closest('.rounded-mini-rect-inner');
+      const outer = inner.closest('.rounded-mini-rect-outer');
+
+      inner.classList.toggle('expanded');
+      outer.classList.toggle('expanded');
+    });
+  });
+});
