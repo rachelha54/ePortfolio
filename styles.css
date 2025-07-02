@@ -614,3 +614,21 @@ a {
 a:hover {
   color: #F6943B;
 }
+
+/*Fun Container*/
+.fun-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  width: 100%;
+}
+
+.fun-blurb {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0em 0em 2em;
+  width: 85%;
+}
