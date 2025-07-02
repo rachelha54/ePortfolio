@@ -291,13 +291,22 @@ p {
   text-align: left;
   padding: 10px 0px 0px 1em;
   font-size: 20px;
-  width: 400px;
+  width: 375px;
 }
 
 .experiences-item-date {
   text-align: right;
   padding: 10px 1em 0px 0px;
   font-size: 15px;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.date-start, .date-end {
+  white-space: nowrap;
 }
 
 .experiences-item-body {
