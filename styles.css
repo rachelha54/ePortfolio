@@ -428,12 +428,11 @@ p {
 .doc-container {
   width: 100%;
   max-width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  overflow: auto;
 }
 
 .doc-container iframe {
-  width: 100%;
+  width: 85%;
   height: 100vh;
   border: none;
 }
