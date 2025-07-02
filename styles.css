@@ -426,9 +426,12 @@ p {
 }
 
 .doc-container {
-  width: 100%;
-  max-width: 100%;
-  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  width: 85%;
+  max-width: 85%;
 }
 
 .doc-container iframe {
