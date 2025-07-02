@@ -9,7 +9,6 @@ body {
 .home-container {
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
 }
 
 /*Text Section for Home Screen*/
@@ -17,10 +16,10 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: center;
   align-items: center;
-  padding: 0px 6em 6em;
+  padding: 0px 6em 0px;
 }
 
 /*'Rachel Ha' on Home Page*/
@@ -631,6 +630,7 @@ p a {
 .dropdown-menu {
   position: relative;
   display: inline-block;
+  z-index: 1000;
 }
 
 .dropdown-icon {
