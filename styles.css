@@ -141,7 +141,7 @@ h3 a:hover {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 0px 6em 6em;
+  padding: 0px 5em 5em;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -154,7 +154,7 @@ h3 a:hover {
   display: flex;
   flex-wrap: wrap;
   flex: 1;
-  padding: 0px 6em 6em;
+  padding: 0px 5em 5em;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -631,7 +631,7 @@ a {
   text-decoration-color: #F6943B;
 }
 
-a:hover {
+h3 a:hover {
   color: #F6943B;
 }
 
