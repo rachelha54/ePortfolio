@@ -190,7 +190,6 @@ h1 b {
 
 .rounded-rectangle-inner {
   width: 100%;
-  height: 30%;
   background-color: #EEE7D2;
   border-radius: 15px;
   text-align: left;
@@ -200,20 +199,64 @@ h1 b {
   align-content: center;
   box-sizing: border-box;
   margin: 0 auto;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.hidden-content {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px 15px 0px 20px;
+  font-size: 15px;
+}
+
+.triangle-toggle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-bottom: 35px solid #F6943B;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.triangle-toggle::before {
+  content: '+';
+  position: absolute;
+  bottom: -38px;
+  right: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #D45C0C;
+  pointer-events: none;
+}
+
+.rounded-rectangle-inner.expanded .triangle-toggle::before {
+  content: '−';
+}
+
+.rounded-rectangle-inner.expanded .hidden-content {
+  max-height: 200px; /* or whatever height suits your content */
 }
 
 /*Rounded Squares for Projects*/
 .rounded-square-outer {
   background-color: #F6943B;
   padding: 5px;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
   border-radius: 15px;
   margin: 5px;
+  width: fit-content;
 }
 
 .rounded-square-inner {
-  width: 200px;
-  height: 150px; /*200px*/
+  width: 200px; /*200px*/
+  height: 150px; /*150px*/
   background-color: #EEE7D2;
   border-radius: 15px;
   display: flex;
@@ -221,6 +264,33 @@ h1 b {
   justify-content: center;
   align-content: center;
   align-items: center;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.rounded-square-outer.expanded,
+.rounded-square-inner.expanded {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Hidden content */
+.rounded-square-inner .hidden-content {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.rounded-square-inner.expanded h4 {
+  margin-top: 5px;
+}
+
+.rounded-square-inner.expanded .hidden-content {
+  max-height: 300px;
+}
+
+.rounded-square-inner.expanded .triangle-toggle::before {
+  content: '−';
 }
 
 .rounded-square-inner-certs {
@@ -285,6 +355,10 @@ p {
   margin: 0px;
   color: #F6943B;
   text-align: left;
+}
+
+p a {
+  color: #3E95CC;
 }
 
 .experiences-item-title {
@@ -368,6 +442,7 @@ p {
   padding: 5px;
   border-radius: 15px;
   margin: 5px;
+  width: fit-content;
 }
 
 .rounded-mini-rect-inner {
@@ -376,9 +451,44 @@ p {
   background-color: #EEE7D2;
   border-radius: 15px;
   display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.rounded-mini-rect-outer.expanded,
+.rounded-mini-rect-inner.expanded {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Hidden content */
+.rounded-mini-rect-inner .hidden-content {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.rounded-mini-rect-inner.expanded h5 b{
+  font-size: 20px;
+}
+
+.rounded-mini-rect-inner.expanded .hidden-content {
+  max-height: 300px; /* adjust as needed */
+}
+
+.rounded-mini-rect-inner.expanded .triangle-toggle::before {
+  content: '−';
+}
+
+.individual-course-container {
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  z-index: 1;
 }
 
 .course-section-container {
