@@ -375,7 +375,7 @@ p a {
   gap: 0.5rem;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .date-start, .date-end {
