@@ -323,6 +323,19 @@ h4 {
 
 }
 
+h4 a {
+  text-decoration: none;
+}
+
+h4 a:visited {
+  text-decoration: none;
+}
+
+h4 a:hover {
+  color: #F6943B;
+  text-decoration: none;
+}
+
 h5 {
   font-family: "Calistoga", serif;
   font-style: normal;
@@ -748,14 +761,16 @@ h3 a:hover {
 /*Fun Container*/
 .fun-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 0px 6em 6em;
   justify-content: center;
   align-items: center;
-  margin-top: 0px;
-  width: 100%;
+  gap: 10px;
 }
 
 .fun-blurb {
+  flex-wrap: wrap;
   text-align: center;
   align-items: center;
   justify-content: center;
