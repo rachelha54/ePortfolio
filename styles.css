@@ -30,7 +30,7 @@ h1 a:hover {
   text-decoration: none;
 }
 
-/*Titles for Portfolio and C&C*/
+/*Titles for Subsequent Pages*/
 h1 b {
   color: #3E95CC;
   text-decoration: none;
@@ -50,7 +50,7 @@ h2 {
   text-align: center;
 }
 
-/*Text on Home Page*/
+/*Body Text*/
 h3 {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
