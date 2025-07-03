@@ -184,7 +184,6 @@ h1 b {
   margin: 5px auto;
   width: 100%;
   box-sizing: border-box;
-  margin: 0 auto;
 }
 
 .rounded-rectangle-inner {
@@ -201,6 +200,10 @@ h1 b {
   margin: 0 auto;
   position: relative;
   transition: all 0.3s ease;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .rounded-rectangle-outer.expanded,
