@@ -3,24 +3,7 @@ body {
   margin: 0;
 }
 
-/*-----HOME PAGE-----*/
-
-/*Container for leftside blurb and rightside menu*/
-.home-container {
-  display: flex;
-  flex-direction: row;
-}
-
-/*Text Section for Home Screen*/
-.home-text-section {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: flex-start;
-  align-content: center;
-  align-items: center;
-  padding: 0px 6em 0px;
-}
+/*-----HEADINGS-----*/
 
 /*'Rachel Ha' on Home Page*/
 h1 {
@@ -47,6 +30,16 @@ h1 a:hover {
   text-decoration: none;
 }
 
+/*Titles for Portfolio and C&C*/
+h1 b {
+  color: #3E95CC;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0 auto;
+  text-align: center;
+}
+
 /*Education Info on Home Page*/
 h2 {
   font-family: "Calistoga", serif;
@@ -67,24 +60,16 @@ h3 {
   font-size: 15px;
 }
 
-/*Color for TIG and Minor*/
-h3 c {
-  color: #F6943B;
-  line-height: 1.2;
-  margin: 0 auto;
-}
-
-/*Color for About Me Blurb*/
-h3 b {
-  color: #3E95CC;
-}
-
 /*Color for Tab Bar*/
 h3 a {
   color: #D45C0C;
   text-decoration: none;
   font-size: 15px;
   text-align: center;
+}
+
+h3 a:hover {
+  color: #F6943B;
 }
 
 h3 a:visited {
@@ -101,226 +86,16 @@ h3 a:hover {
   text-align: center;
 }
 
-.education {
-  margin: 20px;
-}
-
-/*Tab Bar on top of every page*/
-.tab-bar {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-  position: relative;
-  top: 0;
-  right: 0;
-}
-
-/*Coming Soon Alignment*/
-.coming-soon {
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-  padding: 10em;
-}
-
-/*Portfolio Page*/
-.portfolio-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.experiences-container {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding: 0px 5em 5em;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 85%;
-  max-width: 85%;
-}
-
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-  padding: 0px 5em 5em;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-/*Titles for Portfolio and C&C*/
-h1 b {
+/*Color for About Me Blurb*/
+h3 b {
   color: #3E95CC;
-  text-decoration: none;
-  font-size: 40px;
-  font-weight: 400;
+}
+
+/*Color for TIG and Minor*/
+h3 c {
+  color: #F6943B;
+  line-height: 1.2;
   margin: 0 auto;
-  text-align: center;
-}
-
-.heading-container {
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-}
-
-/*Rounded Big Rectangles for Experiences*/
-.rounded-rectangle-outer {
-  background-color: #F6943B;
-  padding: 5px;
-  border-radius: 15px;
-  margin: 5px auto;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.rounded-rectangle-inner {
-  width: 100%;
-  background-color: #EEE7D2;
-  border-radius: 15px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  box-sizing: border-box;
-  margin: 0 auto;
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-* {
-  -webkit-tap-highlight-color: transparent;
-}
-
-.rounded-rectangle-outer.expanded,
-.rounded-rectangle-inner.expanded {
-  width: 100% !important;
-  height: auto !important;
-}
-
-.hidden-content {
-  max-height: 0;
-  overflow: hidden;
-  margin: 0px;
-  padding: 0px 15px 0px 20px;
-  font-size: 15px;
-}
-
-.triangle-toggle {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-left: 35px solid transparent;
-  border-bottom: 35px solid #F6943B;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  z-index: 0;
-}
-
-.triangle-toggle::before {
-  content: '+';
-  position: absolute;
-  bottom: -38px;
-  right: 3px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #D45C0C;
-  pointer-events: none;
-}
-
-.rounded-rectangle-inner.expanded .triangle-toggle::before {
-  content: '−';
-}
-
-.rounded-rectangle-inner.expanded .hidden-content {
-  max-height: 200px; /* or whatever height suits your content */
-}
-
-/*Rounded Squares for Projects*/
-.rounded-square-outer {
-  background-color: #F6943B;
-  padding: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 15px;
-  margin: 5px;
-  width: fit-content;
-}
-
-.rounded-square-inner {
-  width: 200px; /*200px*/
-  height: 150px; /*150px*/
-  background-color: #EEE7D2;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  margin: 0 auto;
-  position: relative;
-  box-sizing: border-box;
-}
-
-.rounded-square-outer.expanded,
-.rounded-square-inner.expanded {
-  width: 100% !important;
-  height: auto !important;
-}
-
-/* Hidden content */
-.rounded-square-inner .hidden-content {
-  max-height: 0;
-  overflow: hidden;
-}
-
-.rounded-square-inner.expanded h4 {
-  margin-top: 5px;
-}
-
-.rounded-square-inner.expanded .hidden-content {
-  max-height: 300px;
-}
-
-.rounded-square-inner.expanded .triangle-toggle::before {
-  content: '−';
-}
-
-.rounded-square-inner-certs {
-  width: 200px;
-  height: 200px;
-  background-color: #EEE7D2;
-  border-radius: 15px;
-  text-align: left;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-/*Titles for Each Item*/
-.experiences-mini-title {
-  display: flex;
-  justify-content: space-between;
-}
-
-.projects-mini-title {
-  display: block;
 }
 
 h4 {
@@ -382,279 +157,20 @@ p a {
   color: #3E95CC;
 }
 
-.experiences-item-title {
-  text-align: left;
-  padding: 10px 0px 0px 1em;
-  font-size: 20px;
-  width: 375px;
-}
-
-.experiences-item-date {
-  text-align: right;
-  padding: 10px 1em 0px 0px;
-  font-size: 15px;
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.date-start, .date-end {
-  white-space: nowrap;
-}
-
-.experiences-item-body {
-  margin: 0px;
-  padding: 10px 15px 10px 20px;
-  font-size: 15px;
-}
-
-.projects-item-title {
-  text-align: center;
-  padding: 5px 10px 0px;
-  font-size: 20px;
-}
-
-.projects-item-date {
-  text-align: center;
-  padding: 0px 10px 0px;
-  font-size: 15px;
-}
-
-.projects-item-body {
-  margin: 0px;
-  padding: 0px 10px 0px;
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*Courses & Certifications Page*/
-.cnc-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.certifications-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-  padding: 0px 6em 6em;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.courses-container {
-  display: block;
-  flex: 1;
-  padding: 0px 6em 6em;
-  justify-content: center;
-  align-items: center;
-}
-
-.rounded-mini-rect-outer {
-  background-color: #F6943B;
-  padding: 5px;
-  border-radius: 15px;
-  margin: 5px;
-  width: fit-content;
-}
-
-.rounded-mini-rect-inner {
-  width: 120px;
-  height: 60px;
-  background-color: #EEE7D2;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  position: relative;
-  box-sizing: border-box;
-}
-
-.rounded-mini-rect-outer.expanded,
-.rounded-mini-rect-inner.expanded {
-  width: 100% !important;
-  height: auto !important;
-}
-
-/* Hidden content */
-.rounded-mini-rect-inner .hidden-content {
-  max-height: 0;
-  overflow: hidden;
-}
-
-.rounded-mini-rect-inner.expanded h5 b{
-  font-size: 20px;
-}
-
-.rounded-mini-rect-inner.expanded .hidden-content {
-  max-height: 300px; /* adjust as needed */
-}
-
-.rounded-mini-rect-inner.expanded .triangle-toggle::before {
-  content: '−';
-}
-
-.individual-course-container {
-  text-align: center;
-  font-size: 15px;
-  position: relative;
-  z-index: 1;
-}
-
-.course-section-container {
-  text-align: center;
-}
-
-.course-section-class-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-/*Resume Page*/
-.resume-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 85%;
-  overflow-x: hidden;
-}
-
-.individual-resume-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 85%;
-}
-
-.pdf-viewer {
-  width: 100%;
-  max-width: 100%;
-  height: 100vh;
-  border: none;
-  margin-bottom: 5em;
-}
-
-.resume-blurb {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 2em 4em 2em;
-  width: 85%;
-}
-
-.big-resume-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0px;
-  width: 100%;
-}
-
-.doc-container {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.doc-container iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/*Contact Me Page*/
-
-.contact-me-container {
-  display: block;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  margin-top: 3em;
-}
-
-.profile-photo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.circle-profile {
-  width: 200px; 
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  object-position: center;
-  margin-top: 1em;
-}
-
-.individual-links-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.individual-links {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 2em;
-}
-
-.individual-links a {
-  color: #F6943B;
-  font-size: 40px;
-}
-
-.individual-links a:hover {
-  color: #D45C0C;
-}
-
-/*FUN PAGE STUFF*/
-.title-container {
-  display: block;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  margin-top: 0px;
-}
-
-.books-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/*Dropdown Tab Select*/
-
+/*-----NAVIGATION BAR-----*/
+/*Dropdow Nav*/
 #dropdown-nav {
   display: none;
 }
 
+/*Settings for the Dropdown*/
 .dropdown-menu {
   position: relative;
   display: inline-block;
   z-index: 1000;
 }
 
+/*Dropdown Hamburger Icon*/
 .dropdown-icon {
   display: flex;
   flex-direction: column;
@@ -668,6 +184,7 @@ p a {
   z-index: 1001;
 }
 
+/*Dashes for the Dropdown Icon*/
 .dropdown-icon span {
   width: 100%;
   height: 2px;
@@ -675,6 +192,7 @@ p a {
   transition: all 0.3 ease-in-out;
 }
 
+/*Settings for the Tabs Inside Dropdown*/
 .dropdown-tabs {
   position: fixed;
   top: 0;
@@ -690,6 +208,7 @@ p a {
   box-sizing: border-box;
 }
 
+/*Properties for Dropdown*/
 .dropdown-tabs a {
   display: block;
   padding: 10px;
@@ -700,47 +219,55 @@ p a {
   transition: all 0.3 ease-in-out;
 }
 
+/*Setting Change When Tabs Open*/
 .dropdown-tabs.open {
   width: 40vw;
   border-left: 5px solid #F6943B;
 }
 
+/*First Bar in Hamburger Rotating When Opened*/
 .dropdown-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
   z-index: 999;
 }
 
+/*Second Bar in Hamburger Disappearing When Opened*/
 .dropdown-icon.open span:nth-child(2) {
   opacity: 0;
   z-index: 999;
 }
 
+/*Third Bar in Hamburger Rotating When Opened*/
 .dropdown-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
   z-index: 999;
 }
 
+/*Transforms When Clicked*/
 .dropdown-icon span:first-child {
   transform: none;
 }
 
+/*Transforms When Clicked*/
 .dropdown-icon span:first-child {
   opacity: 1;
 }
 
+/*Transforms When Clicked*/
 .dropdown-icon span:first-child {
   transform: none;
 }
 
 /*New Tab Bar*/
-
 nav, 
 
+/*Tab Links Settings*/
 .tab-links {
   display: flex;
   margin-top: 0;
 }
 
+/*Nav Settings*/
 nav {
   display: flex;
   justify-content: flex-end;
@@ -751,23 +278,538 @@ nav {
   right: 0;
 }
 
+/*More Tab Links Settings*/
 .tab-links {
   gap: 2rem;
   list-style: none;
   font-size: 1rem;
 }
 
+/*Wording for Tab Links*/
 a {
   color:#D45C0C;
   text-decoration: none;
   text-decoration-color: #F6943B;
 }
 
-h3 a:hover {
-  color: #F6943B;
+/*-----COMING SOON-----*/
+.coming-soon {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 10em;
 }
 
-/*Fun Container*/
+/*-----HEADING CONTAINER-----*/
+.heading-container {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+/*-----Triangle Dropdowns and Hidden Content-----*/
+/*Hidden Content Sections*/
+.hidden-content {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px 15px 0px 20px;
+  font-size: 15px;
+}
+
+/*Triangle Dropdown Toggles*/
+.triangle-toggle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-bottom: 35px solid #F6943B;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+/*Triangle Dropdown +*/
+.triangle-toggle::before {
+  content: '+';
+  position: absolute;
+  bottom: -38px;
+  right: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #D45C0C;
+  pointer-events: none;
+}
+
+/*-----GETS RID OF CLICK FLASH-----*/
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*-----HOME PAGE-----*/
+
+/*Container for leftside blurb and rightside menu*/
+.home-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/*Text Section Container for Home Screen*/
+.home-text-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  padding: 0px 6em 0px;
+}
+
+/*Education Section*/
+.education {
+  margin: 20px;
+}
+
+/*-----PORTFOLIO PAGE-----*/
+/*Full Page Container*/
+.portfolio-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/*Experiences Container*/
+.experiences-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0px 5em 5em;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 85%;
+  max-width: 85%;
+}
+
+/*Outer Rectangle for Experiences*/
+.rounded-rectangle-outer {
+  background-color: #F6943B;
+  padding: 5px;
+  border-radius: 15px;
+  margin: 5px auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*Inner Rectangle for Experiences*/
+.rounded-rectangle-inner {
+  width: 100%;
+  background-color: #EEE7D2;
+  border-radius: 15px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/*Titles for Each Item*/
+.experiences-mini-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Titles for Each Experience*/
+.experiences-item-title {
+  text-align: left;
+  padding: 10px 0px 0px 1em;
+  font-size: 20px;
+  width: 375px;
+}
+
+/*Date for Each Experience*/
+.experiences-item-date {
+  text-align: right;
+  padding: 10px 1em 0px 0px;
+  font-size: 15px;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/*Date Formatting*/
+.date-start, .date-end {
+  white-space: nowrap;
+}
+
+/*Body of Each Experience*/
+.experiences-item-body {
+  margin: 0px;
+  padding: 10px 15px 10px 20px;
+  font-size: 15px;
+}
+
+/*Size Adjust for Experiences Dropdowns*/
+.rounded-rectangle-outer.expanded,
+.rounded-rectangle-inner.expanded {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/*Triangle Changing to - When Closed*/
+.rounded-rectangle-inner.expanded .triangle-toggle::before {
+  content: '−';
+}
+
+/*Setting Height for Hidden Content*/
+.rounded-rectangle-inner.expanded .hidden-content {
+  max-height: 200px;
+}
+
+/*Projects Container*/
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 0px 5em 5em;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/*Outer Rectangle for Projects*/
+.rounded-square-outer {
+  background-color: #F6943B;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  margin: 5px;
+  width: fit-content;
+}
+
+/*Inner Rectangle for Projects*/
+.rounded-square-inner {
+  width: 200px; /*200px*/
+  height: 150px; /*150px*/
+  background-color: #EEE7D2;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/*Title of Each Project*/
+.projects-mini-title {
+  display: block;
+}
+
+/*Title of Each Project*/
+.projects-item-title {
+  text-align: center;
+  padding: 5px 10px 0px;
+  font-size: 20px;
+}
+
+/*Date of Each Project*/
+.projects-item-date {
+  text-align: center;
+  padding: 0px 10px 0px;
+  font-size: 15px;
+}
+
+/*Body of Each Project*/
+.projects-item-body {
+  margin: 0px;
+  padding: 0px 10px 0px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Box Expanding Out When Open*/
+.rounded-square-outer.expanded,
+.rounded-square-inner.expanded {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/*Maintaining Hidden Content*/
+.rounded-square-inner .hidden-content {
+  max-height: 0;
+  overflow: hidden;
+}
+
+/*Adjusting Margin of Title When Expanded*/
+.rounded-square-inner.expanded h4 {
+  margin-top: 5px;
+}
+
+/*Maintaining Height of Hidden Content*/
+.rounded-square-inner.expanded .hidden-content {
+  max-height: 300px;
+}
+
+/*Changing the + to -*/
+.rounded-square-inner.expanded .triangle-toggle::before {
+  content: '−';
+}
+
+/*-----COURSES AND CERTIFICATIONS PAGE-----*/
+/*Full Page Container*/
+.cnc-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/*Courses Container*/
+.courses-container {
+  display: block;
+  flex: 1;
+  padding: 0px 6em 6em;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Outer Rectangle for Courses*/
+.rounded-mini-rect-outer {
+  background-color: #F6943B;
+  padding: 5px;
+  border-radius: 15px;
+  margin: 5px;
+  width: fit-content;
+}
+
+/*Inner Rectangle for Courses*/
+.rounded-mini-rect-inner {
+  width: 120px;
+  height: 60px;
+  background-color: #EEE7D2;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/*Adjusting When Box is Expanded*/
+.rounded-mini-rect-outer.expanded,
+.rounded-mini-rect-inner.expanded {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/*Hidden Content Settings*/
+.rounded-mini-rect-inner .hidden-content {
+  max-height: 0;
+  overflow: hidden;
+}
+
+/*Increases Name of Course When Expanded*/
+.rounded-mini-rect-inner.expanded h5 b{
+  font-size: 20px;
+}
+
+/*Ensuring Hidden Content Height When Expanded*/
+.rounded-mini-rect-inner.expanded .hidden-content {
+  max-height: 300px;
+}
+
+/*Changes the + to - When Expanded*/
+.rounded-mini-rect-inner.expanded .triangle-toggle::before {
+  content: '−';
+}
+
+/*Individual Course Container*/
+.individual-course-container {
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+/*Chunking the MS BS Minor Sections*/
+.course-section-container {
+  text-align: center;
+}
+
+/*Container for Only the Courses Within Each Section*/
+.course-section-class-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Certifications Container*/
+.certifications-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 0px 6em 6em;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/*Inner Square for Certification and Other "Perfect Squares"*/
+.rounded-square-inner-certs {
+  width: 200px;
+  height: 200px;
+  background-color: #EEE7D2;
+  border-radius: 15px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-----RESUME PAGE-----*/
+/*Resume Container*/
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  overflow-x: hidden;
+}
+
+/*Another Resume Container*/
+.big-resume-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  width: 100%;
+}
+
+/*Irrelevant Now But For Each Resume*/
+.individual-resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+}
+
+/*PDF Viewer*/
+.pdf-viewer {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  border: none;
+  margin-bottom: 5em;
+}
+
+/*Blurb on Resume Page*/
+.resume-blurb {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 4em 2em;
+  width: 85%;
+}
+
+/*Document (PDF) Container*/
+.doc-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/*iframe Settings for Document*/
+.doc-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/*-----CONTACT ME PAGE-----*/
+/*Contact Me Container*/
+.contact-me-container {
+  display: block;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 3em;
+}
+
+/*Container for the Photo*/
+.profile-photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Circle Setting for Photo*/
+.circle-profile {
+  width: 200px; 
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: center;
+  margin-top: 1em;
+}
+
+/*Container for the Link Icons*/
+.individual-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Container for Each Icon*/
+.individual-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 2em;
+}
+
+/*Setting Colors for Icons*/
+.individual-links a {
+  color: #F6943B;
+  font-size: 40px;
+}
+
+/*Color Change When Icon is Hovered*/
+.individual-links a:hover {
+  color: #D45C0C;
+}
+
+/*-----FUN CONTAINER-----*/
+/*Main Container*/
 .fun-container {
   display: flex;
   flex-wrap: wrap;
@@ -778,6 +820,7 @@ h3 a:hover {
   gap: 10px;
 }
 
+/*Fun Page Blurb Container*/
 .fun-blurb {
   flex-wrap: wrap;
   text-align: center;
