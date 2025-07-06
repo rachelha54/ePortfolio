@@ -143,6 +143,7 @@ h5 b {
   font-weight: 275;
 }
 
+/*Portfolio & Courses Text */
 p {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
@@ -153,10 +154,12 @@ p {
   text-align: left;
 }
 
+/*Portfolio Section Blurbs*/
 p a {
   color: #3E95CC;
 }
 
+/*Portfolio Section Subtitles*/
 p b {
   color: #D45C0C;
 }
