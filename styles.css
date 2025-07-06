@@ -477,7 +477,8 @@ a {
 
 /*Setting Height for Hidden Content*/
 .rounded-rectangle-inner.expanded .hidden-content {
-  max-height: 200px;
+  max-height: none;
+  overflow: visible;
 }
 
 /*Projects Container*/
