@@ -5,7 +5,7 @@ body {
 
 /*-----HEADINGS-----*/
 
-/*'Rachel Ha' on Home Page*/
+/*Titles on Each Page*/
 h1 {
   font-family: "Calistoga", serif;
   font-weight: 400;
@@ -15,6 +15,7 @@ h1 {
   margin: 0px;
 }
 
+/*'Rachel Ha' on Main Page and Coming Soon Text*/
 h1 a {
   color: #3E95CC;
   text-decoration: none;
@@ -40,7 +41,7 @@ h1 b {
   text-align: center;
 }
 
-/*Education Info on Home Page*/
+/*Education Info on Home Page and Degree Section Titles on Courses Page*/
 h2 {
   font-family: "Calistoga", serif;
   font-weight: 400;
@@ -60,7 +61,7 @@ h3 {
   font-size: 15px;
 }
 
-/*Color for Tab Bar*/
+/*Tab Bar and Dropdown Link Text and Certificate Clickable Link Text*/
 h3 a {
   color: #D45C0C;
   text-decoration: none;
@@ -91,13 +92,14 @@ h3 b {
   color: #3E95CC;
 }
 
-/*Color for TIG and Minor*/
+/*Text for TIG and Minor on Home Page, Page Blurbs for Fun & Resume, Fav Mem Text on Last Traveled, and Text on Recently Read*/
 h3 c {
   color: #F6943B;
   line-height: 1.2;
   margin: 0 auto;
 }
 
+/*Titles for Each Certificate, Location Title for Each Location Traveled, Title of Each Project, Title of Each Book Read*/
 h4 {
   font-family: "Calistoga", serif;
   font-weight: 400;
@@ -107,6 +109,7 @@ h4 {
 
 }
 
+/*Clickable Title Link for Each Fun Page on Fun Page*/
 h4 a {
   text-decoration: none;
 }
@@ -120,6 +123,7 @@ h4 a:hover {
   text-decoration: none;
 }
 
+/*Mini/Subtitles*/
 h5 {
   font-family: "Calistoga", serif;
   font-style: normal;
@@ -130,12 +134,14 @@ h5 {
   align-items: center;
 }
 
+/*Achieved Text for Certificates, Mini Blurbs for Each on Fun Page, Visited Text for Each Location, Dates on Portfolio Page, Author Names on Recently Read Page*/
 h5 a {
   color: #3E95CC;
   padding-top: 5px;
   font-weight: 300;
 }
 
+/*Titles of Courses*/
 h5 b {
   color: #D45C0C;
   padding: 5px;
