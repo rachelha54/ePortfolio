@@ -581,7 +581,8 @@ a {
 
 /*Maintaining Height of Hidden Content*/
 .rounded-square-inner.expanded .hidden-content {
-  max-height: 300px;
+  max-height: none;
+  overflow: visible;
 }
 
 /*Changing the + to -*/
