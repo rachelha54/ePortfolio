@@ -27,7 +27,7 @@ h1 a:visited {
 }
 
 h1 a:hover {
-  color: #4E9ED0;
+  color: #1679b7;
   text-decoration: none;
 }
 
@@ -160,14 +160,30 @@ p {
   text-align: left;
 }
 
-/*Portfolio Section Blurbs*/
+/*Project Links*/
 p a {
   color: #3E95CC;
+  text-decoration: none;
+}
+
+p a:visited {
+  color: #3E95CC;
+  text-decoration: none;
+}
+
+p a:hover {
+  color: #1679b7;
+  text-decoration: none;
 }
 
 /*Portfolio Section Subtitles*/
 p b {
   color: #D45C0C;
+}
+
+/*Experience Section Blurbs*/
+p c {
+  color: #3E95CC;
 }
 
 /*-----NAVIGATION BAR-----*/
