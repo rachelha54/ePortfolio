@@ -33,7 +33,7 @@
 
   .pdf-viewer,
   .doc-container iframe {
-    width: 100%;
+    width: 80%;
     height: 80vh;
   }
 }
